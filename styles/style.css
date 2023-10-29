@@ -137,7 +137,6 @@
 
 .content__card-title {
   font-size: 18px;
-  /* font-weight: var(--font-weight-card-title); */
   padding: 5px 10px;
   border-bottom: 2px solid var(--accent-color);
 }
