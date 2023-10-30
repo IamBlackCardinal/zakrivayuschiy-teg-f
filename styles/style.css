@@ -371,10 +371,14 @@ dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.card__like-button:focus, .footer__button:focus, .dialog__button:focus {
+.card__like-button:focus, .dialog__button:focus {
   outline: none;
   box-shadow: 2px 2px 0 var(--button-bg);
-  mix-blend-mode: difference;
+}
+
+.footer__button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--save-shadow);
 }
 
 .card__like-button::after, .footer__button::after, .dialog__button::after {

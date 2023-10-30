@@ -12,6 +12,7 @@
   --bg-color: #FFF;
   --button-text: #000;
   --button-bg: #FFF;
+  --save-shadow: #000;
   --accent-color: #000;
   --bg-image:
     repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -29,6 +30,7 @@
   --bg-color: #000;
   --button-bg: #00CC14;
   --button-text: #000;
+  --save-shadow: #00CC14;
   --accent-color: #00CC14;
   --bg-image:
     repeating-linear-gradient(90deg, #000 0, #000 2px, transparent 2px, transparent 4px),
@@ -47,6 +49,7 @@
     --bg-color: #000;
     --button-bg: #00CC14;
     --button-text: #000;
+    --save-shadow: #00CC14;
     --accent-color: #00CC14;
     --bg-image:
       repeating-linear-gradient(90deg, #000 0, #000 2px, transparent 2px, transparent 4px),
