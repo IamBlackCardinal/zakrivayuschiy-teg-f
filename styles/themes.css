@@ -5,8 +5,8 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-  --font-basic: 'Inter-Variable','Roboto', sans-serif;
-  --font-accent: 'PressStart2P', 'Courier New', sans-serif;
+  --font-basic: 'Inter-Variable', 'Arial', sans-serif;
+  --font-accent: 'PressStart2P', 'Copperplate', fantasy;
   --font-weight-card-text: 400;
   --font-weight-card-title: 700;
   --bg-color: #FFF;
@@ -22,8 +22,8 @@
 }
 
 :root.theme-dark {
-  --font-basic: 'Inter-Variable','Roboto', sans-serif;
-  --font-accent: 'PressStart2P', 'Courier New', sans-serif;
+  --font-basic: 'Inter-Variable', 'Arial', sans-serif;
+  --font-accent: 'PressStart2P', 'Copperplate', fantasy;
   --font-weight-card-text: 465;
   --font-weight-card-title: 785;
   --bg-color: #000;
@@ -40,8 +40,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --font-basic: 'Inter-Variable','Roboto', sans-serif;
-    --font-accent: 'PressStart2P', 'Courier New', sans-serif;
+    --font-basic: 'Inter-Variable', 'Arial', sans-serif;
+    --font-accent: 'PressStart2P', 'Copperplate', fantasy;
     --font-weight-card-text: 465;
     --font-weight-card-title: 785;
     --bg-color: #000;

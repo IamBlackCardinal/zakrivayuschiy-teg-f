@@ -12,3 +12,133 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes select {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes bigger {
+  from {
+    transform: scale(1);
+    transform-origin: center;
+  }
+
+  to {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+}
+
+@keyframes spark {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.theme-menu__button {
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button::after {
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:disabled::before {
+  animation: select 0.5s infinite ease-in-out alternate;
+}
+
+.card__icon-button:focus-visible {
+  transition: border 0.3s ease;
+}
+
+.core {
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.03s;
+}
+
+.main-body {
+  transition-property: fill;
+  transition-duration: 0.3s;
+}
+
+.like-icon:hover .core {
+  transition-property: fill;
+  transition-duration: 0.3s;
+}
+
+.like-icon:hover .main-body {
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.05s;
+}
+
+.like-icon:active .core {
+  transition-property: fill;
+  transition-duration: 0.3s;
+}
+
+.like-icon:active .main-body {
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .core {
+  transition-property: fill;
+  transition-duration: 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.06s;
+}
+
+.like-icon .contour {
+  transition-property: fill;
+  transition-duration: 0.1s;
+}
+
+.like-icon.is-liked .heart {
+  animation: bigger 0.3s 2 alternate ease-in 0.1s;
+}
+
+.like-icon.is-liked .sparks {
+  animation: spark 0.3s 2 alternate ease-in 0.3s;
+}
+
+.card__like-button:focus, .footer__button:focus, .dialog__button:focus {
+  transition: box-shadow 0.3s ease;
+}
+
+.card__like-button::after, .footer__button::after, .dialog__button::after {
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__like-button:hover::after, .footer__button:hover::after, .dialog__button:hover::after {
+  transform: scaleX(1);
+}
