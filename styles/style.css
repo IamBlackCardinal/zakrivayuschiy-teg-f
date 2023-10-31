@@ -49,12 +49,12 @@
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  padding-block-end: 20px;
   margin: auto;
 }
 
 .header__text {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  margin-block-start: 20px;
 }
 
 .header__theme-menu {
@@ -129,13 +129,12 @@
 .content__card-title {
   font-size: 18px;
   padding: 5px 10px;
-  border-block-end: 2px solid var(--accent-color);
 }
 
 .picture-container {
   position: relative;
   display: inline-block;
-  border-block-end: 2px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
 }
 
 .content__card-picture {
@@ -201,7 +200,7 @@
 .content__card-text {
   display: grid;
   margin: 22px 25px 22px;
-  gap: 25px;
+  gap: 27px;
   font-size: 18px;
   font-variation-settings: 'wght' var(--font-weight-card-text);
   line-height: 1.16667;
